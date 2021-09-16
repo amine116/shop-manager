@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16sp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="5"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:text="@string/today_calc"/>
+
+    <LinearLayout
+        android:id="@+id/main_todayCalcLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="15"
+        android:gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/main_TotalSell"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/main_TotalDue"/>
+
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/main_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="5"
+        android:gravity="center"
+        android:text="@string/details"/>
+
+    <TextView
+        android:visibility="gone"
+        android:gravity="center"
+        android:id="@+id/main_txtNoSellToday"
+        android:textSize="30sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="55"
+        android:divider="@color/black"
+        android:dividerHeight="5sp"
+        android:id="@+id/main_lstTodayCalc"/>
+
+
+    <LinearLayout
+        android:id="@+id/main_buttonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="10"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="invisible">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/mainBtnAddProduct"
+            android:text="@string/add_product"
+            android:textAllCaps="false"/>
+
+        <TextView
+            android:layout_width="5sp"
+            android:layout_height="match_parent"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/mainBtnReserved"
+            android:text="@string/reserved_products"
+            android:textAllCaps="false"/>
+
+        <TextView
+            android:layout_width="5sp"
+            android:layout_height="match_parent"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/mainBtnSoldActivity"
+            android:text="@string/sold_activity"
+            android:textAllCaps="false"/>
+
+    </LinearLayout>
+
+</LinearLayout>

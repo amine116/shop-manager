@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddProduct"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16sp">
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/add_progress"
+        android:visibility="gone"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/add_scrollLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="30"
+                    android:text="@string/product_name_label"/>
+
+                <EditText
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:hint="@string/product_name"
+                    android:id="@+id/addProductEdtProductName"
+                    android:autofillHints=""
+                    android:inputType="text"/>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="40"
+                    android:text="@string/product_code_label"/>
+
+                <EditText
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="60"
+                    android:hint="@string/product_code"
+                    android:id="@+id/addProductEdtProductCode"
+                    android:autofillHints=""
+                    android:inputType="text"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50sp"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:text="@string/company_name_label"/>
+
+                <EditText
+                    android:id="@+id/add_edtCompanyName"
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:hint="@string/enter"
+                    android:autofillHints=""
+                    android:inputType="text"/>
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="30"
+                    android:text="@string/amount_label"/>
+
+                <EditText
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:hint="@string/amount"
+                    android:id="@+id/addProductEdtProductAmount"
+                    android:autofillHints=""
+                    android:inputType="numberDecimal"/>
+
+                <ImageView
+                    android:id="@+id/add_imgCalcAmount"
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="20"
+                    android:src="@drawable/calcimagee"
+                    android:contentDescription="@string/calculator" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="30"
+                    android:text="@string/purchase_price"/>
+
+                <EditText
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:hint="@string/purchase_price_edt"
+                    android:id="@+id/addProductEdtPurchasePrice"
+                    android:autofillHints=""
+                    android:inputType="numberDecimal"/>
+
+                <ImageView
+                    android:id="@+id/add_imgCalcPPrice"
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="20"
+                    android:src="@drawable/calcimagee"
+                    android:contentDescription="@string/calculator" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50sp"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="30"
+                    android:text="@string/selling_price_label"/>
+
+                <EditText
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:hint="@string/selling_price"
+                    android:id="@+id/addProductEdtSellingPrice"
+                    android:autofillHints=""
+                    android:inputType="numberDecimal"/>
+
+                <ImageView
+                    android:id="@+id/add_imgCalcSPrice"
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="20"
+                    android:src="@drawable/calcimagee"
+                    android:contentDescription="@string/calculator" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50sp"/>
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/addProductBtnAdd"
+                android:text="@string/add"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

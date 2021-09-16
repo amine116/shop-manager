@@ -1,0 +1,95 @@
+<resources>
+    <string name="app_name">bManager</string>
+    <string name="product_name">Product Name</string>
+    <string name="product_name_label">Product Name: </string>
+    <string name="product_code_label">Product Code: </string>
+    <string name="product_code">Product Code: </string>
+    <string name="add">Add</string>
+    <string name="add_product">Add Product</string>
+    <string name="measurement_unit">Measurement Unit: </string>
+    <string name="unit">টি</string>
+    <string name="amount"> Amount </string>
+    <string name="amount_label">Amount of product: </string>
+    <string name="reserved_products">Reserved</string>
+    <string name="purchase_price">Total Purchase Price: </string>
+    <string name="purchase_price_edt">Purchase Price</string>
+    <string name="selling_price_label">Selling price per unit: </string>
+    <string name="selling_price">Selling price per unit</string>
+    <string name="currently_reserved_products">Currently Reserved Products</string>
+    <string name="add_to_cart">Add to Cart</string>
+    <string name="cancel">Cancel</string>
+    <string name="product_in_cart">Product in Cart</string>
+    <string name="paid">Payment: </string>
+    <string name="paid_hint">Enter payment</string>
+    <string name="payable_amount">Payable Amount: </string>
+    <string name="customer_name">Customer Name:</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="complete_sell">Complete Sell</string>
+    <string name="price_per_unit">Price per unit: </string>
+    <string name="sell_amount">Sell Amount: </string>
+    <string name="company_name_label">Company Name:</string>
+    <string name="enter">Enter</string>
+    <string name="want_permission">পণ্যটি অলরেডি রয়েছে! আপনি কি এটিকে নতুন করে যুক্ত করতে চান?\n
+    তাহলে এই পণ্যের পুর্বের তথ্য মুছে যাবে। \n
+    টিপসঃ আপনি Reserved Product section থেকে তথ্য এডিট করতে পারেন।</string>
+    <string name="save">Save</string>
+
+    <string name="about_calculator">Note:
+        1. It will calculate fraction numbers and\n
+        after calculating, cast out the digits\n
+        after decimal point(2.6 X 3.2 = 8).</string>
+    <string name="sold_activity">Sold</string>
+    <string name="search_by">Search By:      </string>
+    <string name="customer">Customer</string>
+    <string name="date">Date</string>
+    <string name="product">Product</string>
+    <string name="cart">Cart</string>
+    <string name="details">Details</string>
+    <string name="customer_phone">Customer Phone</string>
+    <string name="phone_optional">Phone(Optional)</string>
+    <string name="select_shop">Select Shop</string>
+    <string name="today_calc">আজকের হিসাব</string>
+    <string name="payment">Payment:</string>
+    <string name="accept_payment">Accept Payment</string>
+    <string name="islam_porda_bitan">Islam Porda Bitan</string>
+    <string name="islam_it_communication">Islam IT Communication</string>
+    <string name="add_master_plaza">Add Master Plaza</string>
+    <string name="select_a_shop">Select a Shop</string>
+    <string name="about">About</string>
+    <string name="log_out">Log out</string>
+    <string name="check_complete_sell">Complete Sell</string>
+    <string name="sell">Sell</string>
+    <string name="calculator">Calculator</string>
+    <string name="title_activity_log_in">LogInActivity</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
+    <string name="enter_here">Enter here</string>
+    <string name="enter_email">Enter Email:</string>
+    <string name="log_in">Log In</string>
+    <string name="enter_password">Enter Password:</string>
+    <string name="change_password">Change Password</string>
+    <string name="verification_message">
+    A password change email was sent to\n
+        \"azh***2@gmail.com\".\n
+        Visit your email to change password.\n
+        Thank you\n
+    </string>
+    <string name="aminul_islam">Aminul Islam</string>
+
+    <string name="my_about">
+        Developer: Aminul Islam\n
+        (Android app developer)\n
+        B.Sc Honors in Mathematics\n
+        Shahjalal University of Science and Technology, Sylhet.\n
+        Email: iaminul237@gmail.com\n
+        Facebook: https://www.facebook.com/Aminul.islam116\n
+    </string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="see_statistics">See Statistics</string>
+    <string name="mail_sell_document">Mail Sell Document</string>
+
+</resources>

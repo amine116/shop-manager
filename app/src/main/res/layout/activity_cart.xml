@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CartActivity"
+    android:orientation="vertical"
+    android:padding="16sp"
+    android:gravity="center">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="10"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0sp"
+            android:layout_weight="50"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="@string/product_in_cart"
+            android:gravity="start"/>
+
+        <CheckBox
+            android:id="@+id/cart_checkComplete"
+            android:layout_width="0sp"
+            android:layout_weight="50"
+            android:text="@string/check_complete_sell"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="40">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:baselineAligned="false">
+
+            <LinearLayout
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="70"
+                android:id="@+id/productListLayout"
+                android:orientation="vertical">
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:background="#ba93b1"
+                android:layout_weight="1">
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="30"
+                android:id="@+id/sellLayout"
+                android:orientation="vertical">
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cart_progress"
+        android:visibility="gone"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="10"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="30">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_weight="50"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/payable_amount"/>
+
+
+                <TextView
+                    android:id="@+id/cart_txtPayableAmount"
+                    android:layout_width="0sp"
+                    android:layout_weight="50"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_weight="50"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/paid"/>
+
+
+                <EditText
+                    android:id="@+id/cart_edtPayment"
+                    android:layout_width="0sp"
+                    android:layout_weight="50"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:hint="@string/paid_hint"
+                    android:autofillHints=""
+                    android:inputType="numberDecimal"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_weight="50"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/customer_name"/>
+
+
+                <EditText
+                    android:id="@+id/cart_edtCustomerName"
+                    android:layout_width="0sp"
+                    android:layout_weight="50"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:hint="@string/enter_name"
+                    android:autofillHints=""
+                    android:inputType="text"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_weight="50"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/customer_phone"/>
+
+
+                <EditText
+                    android:id="@+id/cart_edtCustomerPhone"
+                    android:layout_width="0sp"
+                    android:layout_weight="50"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:hint="@string/phone_optional"
+                    android:autofillHints=""
+                    android:inputType="phone"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/cart_buttonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="10"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <Button
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="60"
+            android:gravity="center"
+            android:id="@+id/cart_btnCompleteSell"
+            android:text="@string/sell"/>
+
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"/>
+
+        <Button
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="30"
+            android:gravity="center"
+            android:id="@+id/cart_btnCancel"
+            android:text="@string/cancel"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

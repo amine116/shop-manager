@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16sp"
+    android:gravity="center"
+    android:background="#2f3136">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/sold_history_categoryName"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/sold_history_totalPayableAmount"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/sold_history_paid"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/sold_history_due"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/sold_history_phone"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20sp"/>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/details"
+        android:textAllCaps="false"
+        android:id="@+id/sold_history_btnDetails"/>
+
+
+
+</LinearLayout>

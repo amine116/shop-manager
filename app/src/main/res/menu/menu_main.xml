@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:title="@string/select_shop"
+        app:showAsAction="never"
+        android:id="@+id/menu_selectShop" />
+
+    <item
+        android:title="@string/see_statistics"
+        app:showAsAction="never"
+        android:id="@+id/menu_statistics" />
+
+    <item
+        android:title="@string/log_in"
+        app:showAsAction="never"
+        android:id="@+id/menu_login" />
+
+    <item
+        android:title="@string/change_password"
+        app:showAsAction="never"
+        android:id="@+id/menu_changePass"/>
+
+    <item
+        android:title="@string/log_out"
+        app:showAsAction="never"
+        android:id="@+id/menu_logout"/>
+
+    <item
+        android:title="@string/about"
+        app:showAsAction="never"
+        android:id="@+id/menu_about" />
+
+</menu>
